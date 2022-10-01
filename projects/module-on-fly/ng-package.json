@@ -2,6 +2,15 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/module-on-fly",
   "lib": {
-    "entryFile": "src/public-api.ts"
-  }
+    "entryFile": "src/public-api.ts",
+    "umdModuleIds": {
+      "moment": "moment"
+    }
+  },
+  "assets": [
+    "./assets"
+  ],
+  "allowedNonPeerDependencies": [
+    "moment"
+  ]
 }

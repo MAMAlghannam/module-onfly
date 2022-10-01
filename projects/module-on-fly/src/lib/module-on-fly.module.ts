@@ -10,7 +10,7 @@ import { ModuleOnFlyComponent } from './module-on-fly.component';
   imports: [
     CommonModule,
     RouterModule.forChild([
-      { path: 'module-onfly', component: ModuleOnFlyComponent  }
+      { path: '', component: ModuleOnFlyComponent  }
     ])
   ],
   // exports: [ModuleOnFlyComponent]
