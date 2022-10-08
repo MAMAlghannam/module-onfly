@@ -1,0 +1,21 @@
+{
+  "name": "module-on-fly",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^11.1.1",
+    "@angular/core": "^11.1.1"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "main": "bundles/module-on-fly.umd.js",
+  "module": "fesm2015/module-on-fly.js",
+  "es2015": "fesm2015/module-on-fly.js",
+  "esm2015": "esm2015/module-on-fly.js",
+  "fesm2015": "fesm2015/module-on-fly.js",
+  "typings": "module-on-fly.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}

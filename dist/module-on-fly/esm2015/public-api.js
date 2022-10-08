@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of module-on-fly
+ */
+// export * from './lib/module-on-fly.service';
+// export * from './lib/module-on-fly.component';
+export * from './lib/module-on-fly.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL21vZHVsZS1vbi1mbHkvc3JjL3B1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCwrQ0FBK0M7QUFDL0MsaURBQWlEO0FBQ2pELGNBQWMsNEJBQTRCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIG1vZHVsZS1vbi1mbHlcbiAqL1xuXG4vLyBleHBvcnQgKiBmcm9tICcuL2xpYi9tb2R1bGUtb24tZmx5LnNlcnZpY2UnO1xuLy8gZXhwb3J0ICogZnJvbSAnLi9saWIvbW9kdWxlLW9uLWZseS5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbW9kdWxlLW9uLWZseS5tb2R1bGUnO1xuIl19
