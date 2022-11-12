@@ -1,0 +1,6 @@
+{
+    "/yelpApi": {
+        "target": "https://owners.toyota.com.sa/",
+        "secure": false
+    }
+}

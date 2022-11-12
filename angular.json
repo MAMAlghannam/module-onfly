@@ -180,8 +180,9 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:build",
           "options": {
+            "singleBundle": true,
             "outputPath": "dist/OFApp",
             "index": "projects/ofapp/src/index.html",
             "main": "projects/ofapp/src/main.ts",
@@ -190,7 +191,12 @@
             "aot": true,
             "assets": [
               "projects/ofapp/src/favicon.ico",
-              "projects/ofapp/src/assets"
+              "projects/ofapp/src/assets",
+              {
+                "glob": "**/*",
+                "input": "projects/ofapp/src/assets",
+                "output": "/onfly-assets/"
+              }
             ],
             "styles": [
               "projects/ofapp/src/styles.scss"
@@ -230,7 +236,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "OFApp:build"
+            "browserTarget": "OFApp:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {

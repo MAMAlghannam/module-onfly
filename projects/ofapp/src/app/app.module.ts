@@ -6,18 +6,24 @@ import { AppComponent } from './app.component';
 
 import { createCustomElement } from '@angular/elements';
 import { AnotherComponent } from './another/another.component';
+import { Page1Component } from './page1/page1.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnotherComponent
+    AnotherComponent,
+    Page1Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [AppComponent],
+  providers: [
+    // here
+  ]
 })
 export class AppModule {
   constructor(injector: Injector) {
